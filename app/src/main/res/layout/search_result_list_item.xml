@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_share"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txt_movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_poster"
+        android:layout_marginEnd="85dp"
+        android:layout_toStartOf="@+id/btn_share"
+        android:text="title here"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_movie_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_movie_title"
+        android:layout_centerVertical="true"
+        android:text="date" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_movie_date"
+        android:layout_marginTop="21dp"
+        android:layout_toStartOf="@+id/btn_share"
+        android:numStars="10" />
+
+    <ImageButton
+        android:id="@+id/btn_share"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="21dp"
+        android:layout_toStartOf="@+id/btn_add_fav"
+        android:background="@drawable/ic_share_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/btn_add_fav"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_star_empty" />
+
+</RelativeLayout>
